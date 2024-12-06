@@ -1,0 +1,114 @@
+/* Navbar container */
+.navbar {
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: left;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar li {
+    position: relative;
+    padding: 1rem 1.5rem; /* Khoảng cách giữa các mục */
+    cursor: pointer;
+    font-size: 1.6rem; /* 16px */
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+
+  }
+  .navbar .nav-item:first-child{
+    padding: 1rem 0rem;
+  }
+  
+  .navbar .arrow {
+    margin-left: 0.5rem;
+    font-size: 1.2rem; /* Mũi tên nhỏ hơn chữ */
+  }
+  
+  /* Dropdown menu */
+  .navbar .dropdown {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    top: 4rem; /* Đẩy menu xuống dưới mục cha */
+    left: -2rem;
+    min-width: 20rem; /* Độ rộng tối thiểu */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background-color: #ffffff;
+    border: 0.1px solid #d3d3d3;
+  }
+  
+  .navbar .dropdown li {
+    color: #333; /* Màu chữ trong dropdown */
+    text-align: left;
+  }
+  
+  .navbar .dropdown li:hover {
+    background-color: #e8f5e9; /* Xanh lá nhạt */
+  }
+
+  .navbar .dropdown::after {
+    content: '';
+    position: absolute;
+    top: -0.8rem; /* Đẩy tam giác xuống gần mục hover */
+    left: 40%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+
+    /* Tam giác lớn (màu gần đen) */
+    border-left: 8.5px solid transparent;
+    border-right: 8.5px solid transparent;
+    border-bottom: 9px solid rgb(255, 255, 255); /* Màu gần đen */
+
+}
+
+.navbar .dropdown::before {
+    content: '';
+    position: absolute;
+    top: -0.8rem; /* Đẩy tam giác nhỏ lên gần tam giác lớn */
+    left: 40%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+
+    /* Tam giác nhỏ (màu trắng) */
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #a3a3a3; /* Màu trắng cho tam giác nhỏ */
+}
+
+
+  
+  /* Hiển thị dropdown khi hover */
+  .navbar li:hover .dropdown {
+    display: block;
+  }
+  
+  /* Link styling */
+  .navbar a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navbar li:hover {
+    color: #1b5e20; /* Xanh lá cây đậm */
+  }
+  /* Biểu tượng FontAwesome trong Navbar */
+.navbar .icon {
+    margin-left: 0.5rem;
+    font-size: 1.2rem; /* Kích thước nhỏ hơn chữ */
+    color: rgb(0, 0, 0); /* Màu trắng để phù hợp với chữ */
+  }
+  
+  .navbar li:hover .icon {
+    color: #1b5e20; /* Màu xanh lá cây đậm khi hover */
+  }
+
+
+  

@@ -1,0 +1,109 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --text-bl:#0000;
+  --text-wh:#ffff;
+}
+.max-w{
+  max-width: 1200px; /* Giới hạn tối đa 1200px */
+  margin: 0 auto; /* Căn giữa nội dung */
+}
+
+html, body {
+  height: 100%;
+  font-size: 62.5%; /* 1rem = 10px */ /* Đặt font-size mặc định (16px) */
+  font-family: 'Times New Roman', Times, serif; /* Font mặc định */
+}
+
+body {
+  line-height: 1.5; /* Cải thiện độ dễ đọc */
+  background-color: white; /* Nền trắng mặc định */
+  color: black; /* Màu chữ đen mặc định */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --primary-color: #4caf50; /* Xanh lá cây chủ đạo */
+  --secondary-color: #66bb6a;
+  --text-color: #333;
+}
+
+
+/* Căn giữa nội dung trong .App */
+.App {
+  text-align: center;
+}
+
+/* Logo */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Khi người dùng không có sự yêu cầu giảm chuyển động */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Header của ứng dụng */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Liên kết */
+.App-link {
+  color: #61dafb;
+}
+
+/* Hoạt ảnh xoay cho logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

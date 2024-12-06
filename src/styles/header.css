@@ -1,0 +1,75 @@
+header {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Top Header */
+  .top-header {
+    background-color: #4caf50; /* Xanh lá cây đậm */
+    color: white;
+    padding: 1rem 0; /* 10px */
+    text-align: center;
+    font-size: 1.4rem; /* 14px */
+  }
+  
+  /* Main Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem; /* 10px 20px */
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo */
+  .logo img {
+    height: 5rem; /* 50px */
+  }
+  
+  /* Thanh tìm kiếm */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem; /* 20px */
+    padding: 1.5rem 2rem; /* 5px 10px */
+    width: 70%;
+    box-shadow: 0px 0.2rem 0.4rem rgba(0, 0, 0, 0.1); /* 0px 2px 4px */
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none; /* Bỏ outline */
+    width: 100%;
+    font-size: 1.6rem; /* 14px */
+    margin-left: 1rem; /* 10px */
+  }
+  
+  .search-bar .search-icon {
+    color: #4caf50; /* Icon màu xanh lá cây */
+    height: 2rem;
+  }
+  
+  /* Nút yêu thích và giỏ hàng */
+  .icons button {
+    cursor: pointer;
+    color: rgb(95, 95, 95);
+    font-size: 1.8rem; /* 18px */
+  }
+  
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+  }
+  .icons button:hover {
+    color: #ffffff; /* Màu xanh lá cây đậm hơn khi hover */
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .header-item_right{
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 1rem;
+    border: 0.1rem solid hsla(122, 39%, 49%, 0.26);
+  }
